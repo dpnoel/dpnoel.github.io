@@ -13,7 +13,7 @@ function setup() {
 function draw(){
  background(255);
  
-  beginShape();
+  beginShape(POINTS);
   vertex(touches[i].x, touches[i].y);
   endShape(CLOSE);
    
