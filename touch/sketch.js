@@ -4,6 +4,7 @@ document.ontouchmove = function(event) {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  ellipseMode(CENTER);
   stroke(0);
   noFill();
   strokeWeight(5);
