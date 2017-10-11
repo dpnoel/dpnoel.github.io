@@ -13,11 +13,9 @@ function setup() {
 function draw(){
  background(255);
  
-  beginShape(POINTS);
-  vertex(touches[i].x, touches[i].y);
+  beginShape();
+   for(var i=0;i<touches.length;i++){
+   vertex(touches[i].x,touches[i].y,150,150);
   endShape(CLOSE);
-   
- for(var i=0;i<touches.length;i++){
-  ellipse(touches[i].x,touches[i].y,150,150);
   }
 }
