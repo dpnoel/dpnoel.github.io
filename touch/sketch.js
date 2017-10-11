@@ -16,4 +16,8 @@ function draw(){
  for(var i=0;i<touches.length;i++){
   rect(touches[i].x,touches[i].y,150,150);
   }
+  beginShape(POINTS);
+  vertex(touches[1], touches[2]);
+  vertex(touches[2], touches[3]);
+  vertex(touches[3], touches[4]);
 }
