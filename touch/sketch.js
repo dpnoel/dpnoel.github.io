@@ -15,8 +15,7 @@ function draw(){
  
   beginShape();
    for(var i=0;i<touches.length;i++){
-   ellipse(touches[i].x,touches[i].y,150,150);
    vertex(touches[i].x,touches[i].y,150,150);
-  endShape(CLOSE);
   }
+  endShape(CLOSE);
 }
