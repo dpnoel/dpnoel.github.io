@@ -10,19 +10,37 @@ var Ay = 0;
 var vMulti = 0.01;
 var bMulti = 0.5;
 
-var backgroundColor;
+var backgroundColor, Rotx, Roty;
 function setup() {
  createCanvas(windowWidth,windowHeight);
+ x = windowWidth / 2;
+ y = windowHeight / 2;
  backgroundColor = color(random(55,255),random(55,255),random(55,255));
- 
 }
 
 function draw() {
  textSize(40);
  text("Rx: " + rotationX, 100, 100);
  text("Ry: " + rotationY, 100, 150);
+ Rotate();
  drawBall();
- //moveBall();
+ moveBall();
+}
+
+function Rotate(){
+  Rotx = rotationX;
+  Roty = rotationY;
+}
+
+function moveBall(){
+  Ax = Roty * vMulti;
+  Ay = Rotx * vMulti;
+  
+  Vx += Ax;
+  Vy += Ay;
+  
+  x += Vx;
+  y += Vy;
 }
 
 function deviceShaken(){
@@ -34,4 +52,5 @@ function drawBall(){
   fill(174,28,164);
   ellipse(x,y,150,150);
 }
+
 
