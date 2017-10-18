@@ -19,6 +19,7 @@ function setup() {
 }
 
 function draw() {
+ clear();
  textSize(40);
  text("Rx: " + rotationX, 100, 100);
  text("Ry: " + rotationY, 100, 150);
@@ -49,7 +50,7 @@ function deviceShaken(){
 }
 
 function drawBall(){
-  noStroke();
+  
   fill(174,28,164);
   ellipse(x,y,150,150);
 }
