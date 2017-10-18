@@ -40,6 +40,23 @@ function moveBall(){
   
   x += Vx;
   y += Vy;
+  
+  if(x - 75 < 0){
+    Vx = -Vx * bMulti;
+    x = 0 + 75;
+  }
+  if(x + 75 > windowWidth){
+    Vx = -Vx * bMulti;
+    x = windowWidth - 75;
+  }
+  if(y - 75 < 0){
+    Vy = -Vy * bMulti;
+    y = 0 + 75;
+  }
+  if(y + 75 > windowHeight){
+    Vy = -Vy * bMulti;
+    y = windowHeight - 75;
+  }
 }
 
 function deviceShaken(){
