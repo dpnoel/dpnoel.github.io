@@ -71,8 +71,7 @@ function drawBall(){
 function info(){
  textSize(30);
  fill(0);
- floor();
- text("Rotationx: " + rotationX, + x + 60, y - 10);
- text("Rotationy: " + rotationY, + x + 60, y + 20);
+ text("Rotationx: " + floor(rotationX), + x + 60, y - 10);
+ text("Rotationy: " + floor(rotationY), + x + 60, y + 20);
 }
 
