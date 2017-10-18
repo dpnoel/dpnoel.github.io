@@ -65,13 +65,13 @@ function deviceShaken(){
 
 function drawBall(){
   fill(174,28,164);
-  ellipse(x,y,100,100);
+  ellipse(x,y,150,150);
 }
 
 function info(){
  textSize(30);
  fill(0);
- text("Rotationx: " + floor(rotationX), + x + 60, y - 10);
- text("Rotationy: " + floor(rotationY), + x + 60, y + 20);
+ text("Rotationx: " + floor(rotationX), + x + 75, y - 0);
+ text("Rotationy: " + floor(rotationY), + x + 75, y + 30);
 }
 
