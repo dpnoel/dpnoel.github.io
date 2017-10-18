@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
- 
+ clear();
  Rotate();
  info();
  drawBall();
