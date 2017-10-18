@@ -19,10 +19,9 @@ function setup() {
 }
 
 function draw() {
- textSize(40);
- text("Rx: " + rotationX, 100, 100);
- text("Ry: " + rotationY, 100, 150);
+ 
  Rotate();
+ info();
  drawBall();
  moveBall();
 }
@@ -49,9 +48,13 @@ function deviceShaken(){
 }
 
 function drawBall(){
-  clear();
   fill(174,28,164);
   ellipse(x,y,150,150);
 }
 
+function info(){
+  textSize(40);
+ text("Rx: " + rotationX, 100, 100);
+ text("Ry: " + rotationY, 100, 150);
+}
 
