@@ -69,8 +69,9 @@ function drawBall(){
 }
 
 function info(){
-  textSize(40);
- text("Rx: " + rotationX, 100, 100);
- text("Ry: " + rotationY, 100, 150);
+ textSize(40);
+ fill(0);
+ text("Rotationx: " + rotationX, + x + 80 - 20);
+ text("Rotationy: " + rotationY, + y + 80 + 30);
 }
 
