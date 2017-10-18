@@ -13,7 +13,7 @@ var bMulti = 0.5;
 var backgroundColor;
 function setup() {
  createCanvas(windowWidth,windowHeight);
- backgroundColor = (random(55,255),random(55,255),random(55,255));
+ backgroundColor = color(random(55,255),random(55,255),random(55,255));
  
 }
 
@@ -31,6 +31,6 @@ function drawBall(){
   ellipse(x,y,150,150);
 }
 function deviceShaken(){
-  backgroundColor = (random(55,255),random(55,255),random(55,255));
+  backgroundColor = color(random(55,255),random(55,255),random(55,255));
   background(backgroundColor);
 }
