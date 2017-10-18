@@ -10,9 +10,10 @@ var Ay = 0;
 var vMulti = 0.01;
 var bMulti = 0.5;
 
+var backgroundColor;
 function setup() {
  createCanvas(windowWidth,windowHeight);
- var backgroundColor = (random(55,255),random(55,255),random(55,255));
+ backgroundColor = (random(55,255),random(55,255),random(55,255));
  
 }
 
@@ -26,5 +27,6 @@ function draw() {
 }
 
 function deviceShaken(){
+  backgroundColor = (random(55,255),random(55,255),random(55,255));
   background(backgroundColor);
 }
