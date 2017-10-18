@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
- clear();
+ background(backgroundColor);
  Rotate();
  info();
  drawBall();
@@ -44,7 +44,6 @@ function moveBall(){
 
 function deviceShaken(){
   backgroundColor = color(random(55,255),random(55,255),random(55,255));
-  background(backgroundColor);
 }
 
 function drawBall(){
