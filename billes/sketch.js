@@ -49,6 +49,7 @@ function deviceShaken(){
 }
 
 function drawBall(){
+  noStroke();
   fill(174,28,164);
   ellipse(x,y,150,150);
 }
