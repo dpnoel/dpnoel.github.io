@@ -7,7 +7,7 @@ var Vy = 0;
 var Ax = 0;
 var Ay = 0;
 
-var backgroundColor(random(0,255),random(0,255),random(0,255));
+var backgroundColor = (random(55,255),random(55,255),random(55,255));
 
 var vMulti = 0.01;
 var bMulti = 0.5;
