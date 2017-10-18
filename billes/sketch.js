@@ -19,18 +19,19 @@ function setup() {
 
 function draw() {
  textSize(40);
- 
  text("Rx: " + rotationX, 100, 100);
  text("Ry: " + rotationY, 100, 150);
  drawBall();
  //moveBall();
 }
 
-function drawBall(){
-  fill(174,28,164);
-  ellipse(x,y,150,150);
-}
 function deviceShaken(){
   backgroundColor = color(random(55,255),random(55,255),random(55,255));
   background(backgroundColor);
 }
+
+function drawBall(){
+  fill(174,28,164);
+  ellipse(x,y,150,150);
+}
+
